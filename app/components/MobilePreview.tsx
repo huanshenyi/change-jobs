@@ -1,6 +1,6 @@
 export default function MobilePreview() {
     return (
-        <div className="relative w-full max-w-[320px] aspect-[320/400] bg-white rounded-3xl shadow-2xl overflow-hidden">
+        <div className="relative max-w-[320px] aspect-[320/400] bg-white rounded-3xl shadow-2xl overflow-hidden w-[313px] h-[449px]">
             <div className="p-4">
                 <div className="flex items-center justify-between mb-4">
                     <div className="text-lg font-bold">あなたに興味がある企業</div>

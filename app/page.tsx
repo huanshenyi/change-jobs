@@ -65,7 +65,7 @@ export default function Page() {
                                 企業からのスカウトで転職活動ができます。
                             </p>
                         </div>
-                        <div className="flex justify-center">
+                        <div className="flex justify-center w-[605px] h-[398px]">
                             <MobilePreview />
                         </div>
                     </div>
