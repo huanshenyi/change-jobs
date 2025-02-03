@@ -43,52 +43,36 @@ export default function UserInterviews() {
     ];
 
     return (
-        <div className="bg-white py-24 relative" data-oid="mckou1l">
-            <div
-                className="absolute top-0 left-1/2 transform -translate-x-1/2 w-16 h-[1px] bg-gray-200"
-                data-oid="crfi1x3"
-            ></div>
-            <div className="max-w-7xl mx-auto px-4" data-oid="xa9xb-z">
-                <div className="text-center mb-16" data-oid="2we3dpz">
-                    <h2 className="text-3xl font-bold" data-oid="a8cz05f">
-                        ユーザーインタビュー
-                    </h2>
-                    <p className="text-gray-600 mt-4" data-oid="vdhkv1t">
-                        LAPRASポートフォリオの活用について
-                    </p>
+        <div className="bg-white py-24 relative">
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-16 h-[1px] bg-gray-200"></div>
+            <div className="max-w-7xl mx-auto px-4">
+                <div className="text-center mb-16">
+                    <h2 className="text-3xl font-bold">ユーザーインタビュー</h2>
+                    <p className="text-gray-600 mt-4">LAPRASポートフォリオの活用について</p>
                 </div>
 
                 {/* インタビュー部分 */}
-                <div className="grid md:grid-cols-3 gap-8 mb-24" data-oid="nvhu9v.">
+                <div className="grid md:grid-cols-3 gap-8 mb-24">
                     {interviews.map((interview, index) => (
-                        <div key={index} className="bg-gray-50 rounded-lg p-6" data-oid="q2t.u1k">
-                            <div className="aspect-[4/3] mb-6" data-oid="6cpumv:">
+                        <div key={index} className="bg-gray-50 rounded-lg p-6">
+                            <div className="aspect-[4/3] mb-6">
                                 <img
                                     src={interview.image}
                                     alt={interview.name}
                                     className="w-full h-full object-cover rounded-lg"
-                                    data-oid="lwm4inp"
                                 />
                             </div>
-                            <p
-                                className="text-gray-800 mb-4 text-lg leading-relaxed"
-                                data-oid="md8zdqo"
-                            >
+                            <p className="text-gray-800 mb-4 text-lg leading-relaxed">
                                 「{interview.quote}」
                             </p>
-                            <div className="flex items-center justify-between" data-oid="d2mxewj">
-                                <div data-oid="vobo8ru">
-                                    <p className="font-medium" data-oid="rgr:x:.">
-                                        {interview.name}さん
-                                    </p>
-                                    <p className="text-gray-600 text-sm" data-oid="2djyob.">
-                                        {interview.username}
-                                    </p>
+                            <div className="flex items-center justify-between">
+                                <div>
+                                    <p className="font-medium">{interview.name}さん</p>
+                                    <p className="text-gray-600 text-sm">{interview.username}</p>
                                 </div>
                                 <a
                                     href={interview.noteUrl}
                                     className="inline-flex items-center justify-center px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors"
-                                    data-oid="qx3x9z:"
                                 >
                                     NOTE
                                 </a>
@@ -98,32 +82,26 @@ export default function UserInterviews() {
                 </div>
 
                 {/* アワード部分 */}
-                <div className="text-center mb-12" data-oid="pe1.41d">
-                    <h3 className="text-2xl font-bold mb-8" data-oid="10jve14">
+                <div className="text-center mb-12">
+                    <h3 className="text-2xl font-bold mb-8">
                         LAPRASポートフォリオを活用してアウトプットされているユーザーの方
                     </h3>
                 </div>
-                <div className="grid md:grid-cols-3 gap-8" data-oid="4nztn2d">
+                <div className="grid md:grid-cols-3 gap-8">
                     {awards.map((award, index) => (
                         <div
                             key={index}
                             className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg p-6 text-white"
-                            data-oid="0u:yyg1"
                         >
-                            <div className="aspect-[4/3] mb-6" data-oid="k:vahay">
+                            <div className="aspect-[4/3] mb-6">
                                 <img
                                     src={award.image}
                                     alt={award.name}
                                     className="w-full h-full object-cover rounded-lg"
-                                    data-oid="u:s2t:a"
                                 />
                             </div>
-                            <p className="font-medium mb-2" data-oid="m23hs3t">
-                                {award.name}さん
-                            </p>
-                            <p className="text-sm opacity-90" data-oid="p:7maib">
-                                「{award.question}」
-                            </p>
+                            <p className="font-medium mb-2">{award.name}さん</p>
+                            <p className="text-sm opacity-90">「{award.question}」</p>
                         </div>
                     ))}
                 </div>
